@@ -23,12 +23,63 @@ code {
 }
 
 .navigation-sub {
-  padding-top: 7px;
-  padding-right: 5px;
+  padding-top: 10px;
+  padding-right: 20%;
 }
 
 .navigation-sub > a {
-  padding: 0 5px 10px 5px;
+  padding: 0 15px 1px 15px;
   text-decoration: none;
   color: white;
+}
+
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  position: absolute;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.card1 {
+  min-width: 20ch;
+  min-height: 20ch;
+  width: 45vw;
+  height: 45vw;
+  max-width: 50ch;
+  max-height: 50ch;
+  background-image: url(https://image.flaticon.com/icons/svg/119/119596.svg);
+}
+
+.card2 {
+  width: 15ch;
+  height: 15ch;
+  background-image: url(https://image.flaticon.com/icons/svg/789/789395.svg);
+}
+
+.card3 {
+  opacity: 0.9;
+  width: 15ch;
+  height: 15ch;
+  background-image: url(https://image.flaticon.com/icons/svg/414/414927.svg);
+}
+
+.card4 {
+  width: 15ch;
+  height: 15ch;
+  background-image: url(https://image.flaticon.com/icons/svg/789/789392.svg);
+}
+
+.container {
+  margin-top: 100px;
+  width: 100%;
+  max-height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

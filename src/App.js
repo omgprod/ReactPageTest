@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
+
 import Projects from './Pages/Projects.js';
 import Articles from './Pages/Articles.js';
 import About from './Pages/About.js';
@@ -11,7 +12,13 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <div className="navigation">
-            <img src={logo} className="logo" alt="Logo Image" />
+            <div style={{display: "flex", justifyContent: "row"}}>
+              <a href="/" style={{position: "absolute", left:"20%",}}>
+                <img src={logo} className="logo" alt="Logo Image" />
+                <span style={{ position: "absolute", top: 11, color: "white", width: 100}}>Barnaby Jack</span>
+              </a>
+            </div>
+
             <div className="navigation-sub">
 
               <Link to="/" className="item">Projects</Link>
