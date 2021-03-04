@@ -20,6 +20,7 @@ function App() {
 
             </div>
           </div>
+
           <div className="App-header">
             <Route exact path="/" component={Projects} />
             <Route path="/articles" component={Articles} />
