@@ -13,7 +13,7 @@ function App() {
         <div className="App">
           <div className="navigation">
             <div style={{display: "flex", justifyContent: "row"}}>
-              <a href="/" style={{position: "absolute", left:"20%",}}>
+              <a href="/ReactPageTest" style={{position: "absolute", left:"20%",}}>
                 <img src={logo} className="logo" alt="Logo Image" />
                 <span style={{ position: "absolute", top: 11, color: "white", width: 100}}>Barnaby Jack</span>
               </a>
