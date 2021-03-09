@@ -21,7 +21,7 @@ function App() {
 
             <div className="navigation-sub">
 
-              <Link to="/" className="item">Projects</Link>
+              <Link to="/projects" className="item">Projects</Link>
               <Link to="/articles" className="item">Articles</Link>
               <Link to="/about" className="item">About</Link>
 
@@ -29,7 +29,7 @@ function App() {
           </div>
 
           <div className="App-header">
-            <Route exact path="/" component={Projects} />
+            <Route exact path="/projects" component={Projects} />
             <Route path="/articles" component={Articles} />
             <Route path="/about" component={About} />
           </div>
