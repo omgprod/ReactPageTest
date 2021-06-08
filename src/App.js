@@ -12,7 +12,7 @@ import './App.css';
 import {Menu, MenuItem, ProSidebar, SubMenu} from "react-pro-sidebar";
 
 function App() {
-  const [collapsed, setCollapsed] = useState(true);
+  const [collapsed, setCollapsed] = useState(false);
   return (
       <BrowserRouter>
         <div className="App">
@@ -50,23 +50,23 @@ function App() {
           </div>
 
           <div className="navigation">
-            <div style={{display: "flex", justifyContent: "row", marginLeft: collapsed ? 20 : 200}}>
-              <a href="/ReactPageTest" style={{position: "absolute", left:"20%",}}>
+            {collapsed ?<div style={{display: "flex", justifyContent: "row", marginLeft: collapsed ? 20 : 200}}>
+              <a href="/" style={{position: "absolute", left:"20%",}}>
                 <img src={logo} className="logo" alt="Logo Image" />
                 <span style={{ position: "absolute", top: 11, color: "white", width: 100}}>Barnaby Jack</span>
               </a>
-            </div>
+            </div> : null}
 
-            <div className="navigation-sub">
+            {collapsed ?<div className="navigation-sub">
               <Link to="/projects" className="item">Projects</Link>
               <Link to="/articles" className="item">Articles</Link>
               <Link to="/about" className="item">About</Link>
-            </div>
+            </div>: null}
           </div>
 
           <div className="App-header">
             <Route exact path="/ReactPageTest" component={ Index } />
-            <Route exact path="/projects" component={ Projects } />
+            <Route exact path="/projects" component={ <Projects/> } />
             <Route path="/articles"       component={ Articles } />
             <Route path="/about"          component={ About } />
           </div>
