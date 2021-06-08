@@ -15,7 +15,7 @@ function App() {
   return (
       <BrowserRouter>
         <div className="App">
-          <div  style={{position: "absolute", top: 0, left: 0, minHeight: "100vh", maxHeight: "100vh", height: "100%"}}>
+          <div  style={{position: "absolute", top: 0, left: 0, height: "100%"}}>
             <ProSidebar collapsed={collapsed}>
               <Menu iconShape="square">
                 <MenuItem style={{marginBottom: 30}}>
