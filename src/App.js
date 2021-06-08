@@ -16,7 +16,6 @@ function App() {
   return (
       <BrowserRouter>
         <div className="App">
-
           <div  style={{position: "absolute", top: 0, left: 0, minHeight: "100vh", maxHeight: "100vh", height: "100%"}}>
             <ProSidebar collapsed={collapsed}>
               <Menu iconShape="square">
@@ -26,26 +25,32 @@ function App() {
                     <span style={{ position: "absolute", left: 58, top: 0, color: "white", width: 100}}> {collapsed ? "" : "Barnaby Jack"}</span>
                   </a>
                 </MenuItem>
-                <SubMenu title="My Technologies" icon={FaBeer()}>
-                  <MenuItem><Link to="/projects" className="item">Project 1</Link></MenuItem>
-                  <MenuItem><Link to="/projects" className="item">Project 2</Link></MenuItem>
+                <SubMenu title="Mes Technologies" icon={FaBeer()}>
+                  <MenuItem><Link to="/projects" className="item">Front-End</Link></MenuItem>
+                  <MenuItem><Link to="/projects" className="item">Back-End</Link></MenuItem>
+                  <MenuItem><Link to="/projects" className="item">Environment</Link></MenuItem>
+                  <MenuItem><Link to="/projects" className="item">DEV-OPS</Link></MenuItem>
                   <MenuItem>List all</MenuItem>
                 </SubMenu>
-                <SubMenu title="Projects" icon={FaFolder()}>
-                  <MenuItem><Link to="/projects" className="item">Project 1</Link></MenuItem>
-                  <MenuItem><Link to="/projects" className="item">Project 2</Link></MenuItem>
+                <SubMenu title="Mes Projets Perso" icon={FaFolder()}>
+                  <MenuItem><Link to="/projects" className="item">Derat'App</Link></MenuItem>
+                  <MenuItem><Link to="/projects" className="item">Qr-Cartes</Link></MenuItem>
+                  <MenuItem><Link to="/projects" className="item">Discord bot</Link></MenuItem>
+                  <MenuItem><Link to="/projects" className="item">Grow my box</Link></MenuItem>
                   <MenuItem>List all</MenuItem>
                 </SubMenu>
                 <SubMenu title="About me" icon={FaInfo()}>
-                  <MenuItem>Component 1</MenuItem>
-                  <MenuItem>Component 2</MenuItem>
+                  <MenuItem>Parcours</MenuItem>
+                  <MenuItem>Diplomes</MenuItem>
+                  <MenuItem>Référence</MenuItem>
+                  <MenuItem>CV</MenuItem>
                 </SubMenu>
               </Menu>
             </ProSidebar>
           </div>
 
           <div className="navigation">
-            <div style={{display: "flex", justifyContent: "row"}}>
+            <div style={{display: "flex", justifyContent: "row", marginLeft: collapsed ? 20 : 200}}>
               <a href="/ReactPageTest" style={{position: "absolute", left:"20%",}}>
                 <img src={logo} className="logo" alt="Logo Image" />
                 <span style={{ position: "absolute", top: 11, color: "white", width: 100}}>Barnaby Jack</span>
