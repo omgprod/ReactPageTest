@@ -18,7 +18,7 @@ function Projects() {
 
     return (
         <div style={{display: "flex", justifyContent: "column"}}>
-            <h1 style={{position: "absolute", top: 25, left: 40}}>Projects</h1>
+            <h1 style={{position: "absolute", top: 25, left: 100}}>Projects</h1>
             <div onClick={() => toggle(!open)}>
                 <animated.svg style={{ transform, opacity, height: 100, width: "100%" }} viewBox="0 0 1278 446">
                     <defs>
