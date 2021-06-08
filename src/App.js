@@ -21,7 +21,7 @@ function App() {
             <ProSidebar collapsed={collapsed}>
               <Menu iconShape="square">
                 <MenuItem style={{marginBottom: 30}}>
-                  <a /*href="/ReactPageTest"*/ onClick={() => setCollapsed(!collapsed)}>
+                  <a onClick={() => setCollapsed(!collapsed)}>
                     <img style={{ position: "absolute", left: 18, top: -10, color: "white"}} src={logo} className="logo" alt="Logo Image" />
                     <span style={{ position: "absolute", left: 58, top: 0, color: "white", width: 100}}> {collapsed ? "" : "Barnaby Jack"}</span>
                   </a>
