@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { FaBeer, FaFolder, FaInfo } from 'react-icons/fa';
 
-import Projects from './Pages/Projects.js';
-import Articles from './Pages/Articles.js';
-import About from './Pages/About.js';
 import Index from './Pages/Index.js';
+import Projects from './Pages/Projects.js';
+import Technos from './Pages/Technos.js';
+import About from './Pages/About.js';
 import logo from './logo.svg';
 import './App.css';
 import {Menu, MenuItem, ProSidebar, SubMenu} from "react-pro-sidebar";
@@ -66,7 +66,7 @@ function App() {
           <div className="App-header">
             <Route exact path="/"         component={ Index } />
             <Route exact path="/projects" component={ Projects } />
-            <Route exact path="/articles" component={ Articles } />
+            <Route exact path="/articles" component={ Technos } />
             <Route exact path="/about"    component={ About } />
           </div>
 
