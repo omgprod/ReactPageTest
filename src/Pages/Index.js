@@ -5,7 +5,7 @@ import 'react-pro-sidebar/dist/css/styles.css';
 function Index(props) {
     return (
         <div>
-            <h1>Test</h1>
+            <h1>Barnaby Jack</h1>
         </div>
     )
 }
