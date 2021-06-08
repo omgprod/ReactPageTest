@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { FaBeer, FaFolder, FaInfo } from 'react-icons/fa';
 
-
 import Projects from './Pages/Projects.js';
 import Articles from './Pages/Articles.js';
 import About from './Pages/About.js';
@@ -26,10 +25,10 @@ function App() {
                   </a>
                 </MenuItem>
                 <SubMenu title="Mes Technologies" icon={FaBeer()}>
-                  <MenuItem><Link to="/projects" className="item">Front-End</Link></MenuItem>
-                  <MenuItem><Link to="/projects" className="item">Back-End</Link></MenuItem>
-                  <MenuItem><Link to="/projects" className="item">Environment</Link></MenuItem>
-                  <MenuItem><Link to="/projects" className="item">DEV-OPS</Link></MenuItem>
+                  <MenuItem><Link to="/technologies" className="item">Front-End</Link></MenuItem>
+                  <MenuItem><Link to="/technologies" className="item">Back-End</Link></MenuItem>
+                  <MenuItem><Link to="/technologies" className="item">Environment</Link></MenuItem>
+                  <MenuItem><Link to="/technologies" className="item">DEV-OPS</Link></MenuItem>
                   <MenuItem>List all</MenuItem>
                 </SubMenu>
                 <SubMenu title="Mes Projets Perso" icon={FaFolder()}>
@@ -40,10 +39,10 @@ function App() {
                   <MenuItem>List all</MenuItem>
                 </SubMenu>
                 <SubMenu title="About me" icon={FaInfo()}>
-                  <MenuItem>Parcours</MenuItem>
-                  <MenuItem>Diplomes</MenuItem>
-                  <MenuItem>Référence</MenuItem>
-                  <MenuItem>CV</MenuItem>
+                  <MenuItem><Link to="/projects" className="item">Parcours</Link></MenuItem>
+                  <MenuItem><Link to="/projects" className="item">Diplomes</Link></MenuItem>
+                  <MenuItem><Link to="/projects" className="item">Référence</Link></MenuItem>
+                  <MenuItem><Link to="/projects" className="item">CV</Link></MenuItem>
                 </SubMenu>
               </Menu>
             </ProSidebar>
@@ -65,10 +64,10 @@ function App() {
           </div>
 
           <div className="App-header">
-            <Route exact path="/ReactPageTest" component={ Index } />
-            <Route exact path="/projects" component={ <Projects/> } />
-            <Route path="/articles"       component={ Articles } />
-            <Route path="/about"          component={ About } />
+            <Route exact path="/"         component={ Index } />
+            <Route exact path="/projects" component={ Projects } />
+            <Route exact path="/articles" component={ Articles } />
+            <Route exact path="/about"    component={ About } />
           </div>
 
         </div>
